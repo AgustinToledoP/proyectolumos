@@ -11,8 +11,8 @@ body{
 header {
     display: flex;
     background-color: chocolate;
-        align-items: center;
-        justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -23,20 +23,25 @@ ul {
 li a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 0.62rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li{
     text-decoration: none;
     color: black;
-    padding: 10px; 
+    padding: 1rem; 
+    background-color: chocolate;
+}
+
+main{
+    margin: 1rem;
 }
 
 .header__navegacion {
     display: flex;
     justify-content: flex-end;
-    padding: 15px;
+    padding: 1rem;
 } 
 
 .header__logo{
@@ -44,34 +49,25 @@ li{
 }
 
 .destacado__titulo{
-    font-size: 100px;
+    font-size: 6.25rem;
     text-align: center;
     text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 30px;
+    padding: 1.8rem;
 }
 
 .destacado__subtitulo{
-    color: blackhocolate;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    padding: 30px;
-}
-
-.destacado__logo{
-    background-color: chocolate;
-    padding: 30px;
-    margin: 20px;
-    width: 500px;
-    height: 500px;
+    padding: 1.8rem;
 }
 
 .destacado__parrafo{
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
     font-weight: 900;
-    margin: 20px;
+    margin: 1.5rem;
 }
 
 .destacado__boton{
@@ -79,9 +75,8 @@ li{
     background-color: chocolate;
     font-size: large;
     font-weight: 900;
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
+    margin: 1.25rem;
+    padding: 1.25rem;
     border: 3px outset black;
 }
 
@@ -89,38 +84,23 @@ li{
     display: flex;
     background-color: chocolate;
     justify-content:center;
-    padding: 15px;
+    padding: 0.9rem;
 }
-
-.destacado__imagen{
-    max-width: 300px;
-    max-height: 300px;
-    background-color: chocolate;
-    margin: 10px;
-    padding: 10px;
-}
-
-
 
 .destacado__formulario{
     background-color: chocolate;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
-    padding: 10px;
-    border: 150px;
-}
-
-.informacion__video{
-    background-color: black;
-    padding: 0px;
-    margin: 20px;
+    margin: 0.62rem;
+    padding: 0.62rem;
+    border: 9rem;
 }
 
 .resultado__parrafo{
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
     font-weight: 900;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .footer__redes{
@@ -128,64 +108,522 @@ li{
     background-color: chocolate;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
-    padding: 15px;
-    
 }
+
 .footer__derechos{
     color: black;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
-    padding-top: 30px; 
-    margin: 20px
+    padding-top: 1.87rem; 
+    margin: 1.25rem
 }
+
+/* comienzo Grid en index */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo"
+                        "subtitulo subtitulo subtitulo"
+                        "imagen parrafo1 parrafo1"
+                        "video parrafo2 parrafo2"
+                        "boton boton boton";
+}
+
+.destacado{
+    grid-area: titulo;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+.parrafo1{
+    grid-area: parrafo1;
+    align-self: center;
+}
+
+.video{
+    grid-area: video;
+    margin: 1rem;
+}
+
+.parrafo2{
+    grid-area: parrafo2;
+    align-self: center;
+}
+
+.boton{
+    grid-area: boton;
+}
+
+
 
 /* comienzo Grid en seccion Productos */
 
 .productos{
     display: grid;
-    grid-template-rows: 0.25fr 4fr 0.25fr 4fr;
-    grid-template-columns: 1fr 2fr;
-    margin-block-end: 50px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.75fr 0.50fr 2fr 0.50fr 2fr;
+    grid-template-areas: "titulo titulo"
+                        "subtitulo1 subtitulo1"
+                        "imagen1 definicion1"
+                        "subtitulo2 subtitulo2"
+                        "imagen2 definicion2";
+    margin: 1rem;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.subtitulo1{
+    grid-area: subtitulo1;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    background-image: url(../recursos/taza-galeria1.png);
+    background-size: cover;
     background-position: center;
 }
 
-/* .productos__item{
-    border: 10px solid rgb(27, 12, 2);
-} */
-
-.item__taza{
-    grid-column: 1/3;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-}
-
-.item__remera{
-    grid-column: 1/3;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px
-}
-
-.item__definicion{
+.definicion1{
+    grid-area: definicion1;
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px
+    align-self: center;
+    margin: 1rem;
 }
 
-.item__imagen1{
+.subtitulo2{
+    grid-area: subtitulo2;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+}
+
+.imagen2{
+    grid-area: imagen2;
+    background-image: url(../recursos/remeras-galeria1.png);
+    background-size: cover;
+    
+}
+
+.definicion2{
+    grid-area: definicion2;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+    margin: 1rem;
+}
+
+/* comienzo Grid Galeria */
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1.5fr 1.5fr 0.5fr 1.5fr 1.5fr;
+    grid-template-areas: "titulo titulo titulo titulo titulo"
+                        "subtitulo1 subtitulo1 subtitulo1 subtitulo1 subtitulo1"
+                        "taza1 taza2 taza3 taza4 taza5"
+                        "taza6 taza7 taza8 taza9 taza10"
+                        "subtitulo2 subtitulo2 subtitulo2 subtitulo2 subtitulo2"
+                        "remera1 remera2 remera3 remera4 remera5 "
+                        "remera6 remera7 remera8 remera9 remera10";
+}
+
+.galeria__titulo{
+    grid-area: titulo;
+}
+.galeria_subtitulo1{
+    grid-area: subtitulo1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+}
+
+.galeria__taza1{
+    grid-area: taza1;
+    background-image: url(../recursos/taza-galeria1.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza2{
+    grid-area: taza2;
+    background-image: url(../recursos/taza-galeria2.png);
+    background-size:contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza3{
+    grid-area: taza3;
     background-image: url(../recursos/taza-galeria3.png);
-    background-position: inherit;
     background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza4{
+    grid-area: taza4;
+    background-image: url(../recursos/taza-galeria4.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza5{
+    grid-area: taza5;
+    background-image: url(../recursos/taza-galeria5.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza6{
+    grid-area: taza6;
+    background-image: url(../recursos/taza-galeria6.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza7{
+    grid-area: taza7;
+    background-image: url(../recursos/taza-galeria7.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza8{
+    grid-area: taza8;
+    background-image: url(../recursos/taza-galeria8.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza9{
+    grid-area: taza9;
+    background-image: url(../recursos/taza-galeria9.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__taza10{
+    grid-area: taza10;
+    background-image: url(../recursos/taza-galeria10.png);
+    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
 }
 
-.item__imagen2{
+.galeria_subtitulo2{
+    grid-area: subtitulo2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10rem;
+}
+
+.galeria__remera1{
+    grid-area: remera1;
+    background-image: url(../recursos/remeras-galeria1.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.galeria__remera2{
+    grid-area: remera2;
+    background-image: url(../recursos/remeras-galeria2.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera3{
+    grid-area: remera3;
     background-image: url(../recursos/remeras-galeria3.png);
-    background-position: inherit;
     background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera4{
+    grid-area: remera4;
+    background-image: url(../recursos/remeras-galeria4.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera5{
+    grid-area: remera5;
+    background-image: url(../recursos/remeras-galeria5.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera6{
+    grid-area: remera6;
+    background-image: url(../recursos/remeras-galeria6.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera7{
+    grid-area: remera7;
+    background-image: url(../recursos/remeras-galeria7.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera8{
+    grid-area: remera8;
+    background-image: url(../recursos/remeras-galeria8.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera9{
+    grid-area: remera9;
+    background-image: url(../recursos/remeras-galeria9.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.galeria__remera10{
+    grid-area: remera10;
+    background-image: url(../recursos/remeras-galeria10.png);
+    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
 }
 
 
+/* utilizacion de grid quienes somos */
+
+.quienesomos{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "titulo titulo"
+                        "agustin agustin"
+                        "imagenagus parrafoagus"
+                        "luz luz"
+                        "imagenluz parrafoluz";
+}
+
+.quien__titulo{
+    grid-area: titulo;
+}
+
+.quien__agustin{
+    grid-area: agustin;
+}
+
+.quien__imagenagus{
+    grid-area: imagenagus;
+}
+
+.quien__parrafoagus{
+    grid-area: parrafoagus;
+}
+
+.quien__luz{
+    grid-area: luz;
+}
+
+.quien_imagenluz{
+    grid-area: imagenluz;
+}
+
+.quien__parrafoluz{
+    grid-area: parrafoluz;
+}
+
+
+
+
+/* Utilizacion de media quarie */
+
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px){
+    .grid{
+        grid-template-columns: 2fr 10fr;
+       /*  grid-template-rows: 0.25fr 0.15fr 0.5fr 1fr 0.15fr; */
+        grid-template-areas: "titulo titulo"
+                            "subtitulo subtitulo"
+                            "imagen parrafo1"
+                            "video parrafo2"
+                            "boton boton";
+    }
+
+    header{
+        background-color: chocolate;
+        flex-direction: column;
+        width: 52rem;
+    }
+
+    /* li a {
+        font-size: 2rem;
+    } */
+
+    .video__mod{
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .imagen__mod{
+        width: 100vw;
+        height: 80vh; 
+    }
+
+    .footer__redes{
+        width: 52rem
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: 25rem 25rem;
+        grid-template-rows: 0.75fr 0.50fr 2fr 0.50fr 2fr;
+        grid-template-areas: "titulo titulo"
+                            "subtitulo1 subtitulo1"
+                            "imagen1 definicion1"
+                            "subtitulo2 subtitulo2"
+                            "imagen2 definicion2";
+    }
+    
+    .imagen1, .imagen2{
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 28rem 28rem;
+        grid-template-rows: 1fr 0.5fr 3fr 3fr 3fr 3fr 3fr 0.5fr 3fr 3fr 3fr 3fr 3fr;
+        grid-template-areas: "titulo titulo"
+                            "subtitulo1 subtitulo1"
+                            "taza1 taza2"
+                            "taza3 taza4"
+                            "taza5 taza6"
+                            "taza7 taza8"
+                            "taza9 taza10"
+                            "subtitulo2 subtitulo2"
+                            "remera1 remera2"
+                            "remera3 remera4"
+                            "remera5 remera6"
+                            "remera7 remera8"
+                            "remera9 remera10";
+    }
+}
+
+
+/* CELULAR */
+@media (min-width:320px) and (max-width: 540px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
+                            "subtitulo"
+                            "imagen"
+                            "parrafo1"
+                            "video"
+                            "parrafo2"
+                            "boton";
+    }
+
+    .video__mod{
+        width: 190vw;
+        height: 70vh;
+    }
+
+    header{
+        flex-direction: column;
+        width: 52rem;
+    }
+
+    li a {
+        font-size: 2rem;
+    }
+    .header__navegacion{
+        flex-direction: column;
+    }
+
+    .footer__redes{
+        width: 52rem
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns:3fr;
+        grid-template-rows: 0.75fr 0.50fr 2fr 1fr 0.50fr 2fr 1fr;
+        grid-template-areas: "titulo"
+                            "subtitulo1"
+                            "imagen1"
+                            "definicion1"
+                            "subtitulo2"
+                            "imagen2"
+                            "definicion2";
+    }
+
+    .imagen1, .imagen2{
+        width: 140vw;
+        height: 50vh;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 1fr 0.5fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 0.5fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+        grid-template-areas: "titulo"
+                            "subtitulo1"
+                            "taza1"
+                            "taza2"
+                            "taza3"
+                            "taza4"
+                            "taza5"
+                            "taza6"
+                            "taza7"
+                            "taza8"
+                            "taza9"
+                            "taza10"
+                            "subtitulo2"
+                            "remera1"
+                            "remera2"
+                            "remera3"
+                            "remera4"
+                            "remera5"
+                            "remera6"
+                            "remera7"
+                            "remera8"
+                            "remera9"
+                            "remera10";
+    }
+
+    .quienesomos{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-areas: "titulo"
+                            "agustin"
+                            "imagenagus"
+                            "parrafoagus"
+                            "luz"
+                            "imagenluz"
+                            "parrafoluz";
+    }
+
+    .destacado__subtitulo{
+        text-align: center;
+    }
+
+    .destacado__parrafo{
+        font-size: 1.5rem;
+    }
+}
