@@ -12,57 +12,92 @@
 </head>
 <body>
     <header>
-        <a class="header__logo" href="index.html"><img src="recursos/logo-lumos-header.png" alt="iono logo"></a>
-        <nav class="header__orden">
-            <ul class="header__navegacion">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/producto.html">Producto</a></li>
-                <li><a href="./paginas/galeria.htm">Galeria</a></li>
-                <li><a href="./paginas/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-p">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./recursos/logo-lumos-header.png" alt="" width="240" height="240">
+                </a>
+            </div>
+                <a class="navbar-brand" href="./index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="navbar-brand" href="./paginas/producto.html">Productos</a></li>
+                    <li class="nav-item"><a class="navbar-brand" href="./paginas/galeria.htm">Galeria</a></li>
+                    <li class="nav-item"><a class="navbar-brand" href="./paginas/quienes-somos.html">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="navbar-brand" href="./paginas/contacto.html">Contacto    </a></li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
-        <main class="grid">
-            <section class="destacado">
-                <H1 class="destacado__titulo">LUMOS SUBLIMADOS</H1>
-            </section>
-            <section class="subtitulo">
-                <h2 class="destacado__subtitulo">Si lo puedes imaginar, lo puedes sublimar.</h2>
-            </section>
-            <section class="imagen">
-                <img class="imagen__mod" src="./recursos/logo-lumos.png" alt="logo lumos">
-            </section>
-            <section class="parrafo1">
-                <p class="destacado__parrafo">  Sublimación es la transición de una sustancia directamente del estado sólido al estado gaseoso,sin pasar por el estado líquido, es un proceso endotérmico que se produce a temperaturas y presiones inferiores al punto triple de una sustancia en su diagrama de fases, que corresponde a la presión más baja a la que la sustancia puede existir como líquido. El proceso inverso a la sublimación es la deposición, desublimación o sublimación inversa, en la que una sustancia pasa directamente de una fase gaseosa a una sólida. La sublimación también se ha utilizado como término genérico para describir una transición de sólido a gas (sublimación) seguida de una transición de gas a sólido (deposición).Mientras que la vaporización de líquido a gas se produce como evaporación desde la superficie si se produce por debajo del punto de ebullición del líquido, y como ebullición con formación de burbujas en el interior del líquido si se produce en el punto de ebullición, no existe tal distinción para la transición de sólido a gas que siempre se produce como sublimación desde la superficie.<p>
-            </section>      
-            <section class="video">
-                <iframe class="video__mod" width="560" height="315" src="https://www.youtube.com/embed/nwZrAi1f1bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section class="parrafo2"> 
+    <main class="container-fluid">
+        <section class="row">
+            <H1 class="destacado__titulo">LUMOS SUBLIMADOS</H1>
+        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+            <img src="recursos/imagen-carrusel1.png" class="d-block w-100" alt="imagen-carrusel1">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="recursos/imagen-carrusel2.png" class="d-block w-100" alt="imagen-carrusel2">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="recursos/imagen-carrusel3.png" class="d-block w-100" alt="imagen-carrusel3">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+        <section class="row">
+            <h2 class="destacado__subtitulo">Si lo puedes imaginar, lo puedes sublimar.</h2>
+        </section>
+        <section class="row">
+            <div class="col">
+                <img class="imagen__producto" src="./recursos/logo-lumos.png" alt="logo lumos">
+            </div>
+            <div class="col">
+                <p class="destacado__parrafo">  Sublimación es la transición de una sustancia directamente del estado sólido al estado gaseoso,sin pasar por el estado líquido, es un proceso endotérmico que se produce a temperaturas y presiones inferiores al punto triple de una sustancia en su diagrama de fases, que corresponde a la presión más baja a la que la sustancia puede existir como líquido. El proceso inverso a la sublimación es la deposición, desublimación o sublimación inversa, en la que una sustancia pasa directamente de una fase gaseosa a una sólida.<p>
+            </div>
+        </section>      
+        <section class="row">
+            <div class="col">
+                <iframe class="imagen__producto" width="560" height="315" src="https://www.youtube.com/embed/nwZrAi1f1bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col">
                 <p class="resultado__parrafo">Te mostramos un poco lo que hacemos, el resultado de nuestro producto, elegi tus diseños preferidos y nosotros los sublimamos donde mas quieras, tazas, remeras mouse pad, gorras, platos, entre otras cosas. <br> Sino tenes un diseño, contamos con expertos en photoshop que lo diseñaran por ti.</p>
-            </section> 
-            <section class="boton">
-                <a href="./paginas/producto.html"><button class="destacado__boton">Ver Productos</button></a> 
-            </section> 
-        </main>
-    <footer>
-        <div>
-            <ul class="footer__redes">
-                <li> <img src="recursos/facebook.png" alt="logo facebook"><a href="https://www.facebook.com/Lumos-Sublimados-100171612501540">Facebook</a> </li>
-                <li> <img src="recursos/instagram.png" alt="logo instagram"><a href="https://www.instagram.com/lumos.sublimados/">Instagram</a> </li>
-                <li> <img src="recursos/youtube.png" alt="logo YouTube"><a href="https://www.youtube.com/channel/UCyU4NWFw4pEX4Obm8R_Q_kA">YouTube</a></li>
-                <li> <img src="recursos/whatsapp.png" alt="logo whatsapp"><a href="https://api.whatsapp.com/send?phone=543512251924&app=facebook&entry_point=page_cta&fbclid=IwAR3z-9FUNhRs3eQMRnXDy8U06NKNCmjK9BSZ-1j6We5eTXmg97O-hyCpcQw">Whatsapp</a></li>
-            </ul>
-        </div>
-        <div class="footer__derechos">
-            <P>Copyright 2022 © - LUMOS. Todos los derechos reservados</P>
-        </div>
+            </div>
+        <section class="boton">
+            <a href="./paginas/producto.html"><button class="destacado__boton">Ver Productos</button></a> 
+        </section> 
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-p">
+        <p class="col-md-4 mb-0">Copyright 2022 © - LUMOS. Todos los derechos reservados</p>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"> <img src="recursos/facebook.png" alt="logo facebook"><a class="nav-link px-2"  href="https://www.facebook.com/Lumos-Sublimados-100171612501540">Facebook</a> </li>
+            <li class="nav-item"> <img src="recursos/instagram.png" alt="logo instagram"><a class="nav-link px-2"  href="https://www.instagram.com/lumos.sublimados/">Instagram</a> </li>
+            <li class="nav-item"> <img src="recursos/youtube.png" alt="logo YouTube"><a class="nav-link px-2"  href="https://www.youtube.com/channel/UCyU4NWFw4pEX4Obm8R_Q_kA">YouTube</a></li>
+            <li class="nav-item"> <img src="recursos/whatsapp.png" alt="logo whatsapp"><a class="nav-link px-2"  href="https://api.whatsapp.com/send?phone=543512251924&app=facebook&entry_point=page_cta&fbclid=IwAR3z-9FUNhRs3eQMRnXDy8U06NKNCmjK9BSZ-1j6We5eTXmg97O-hyCpcQw">Whatsapp</a></li>
+        </ul>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
         AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
