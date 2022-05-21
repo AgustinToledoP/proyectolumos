@@ -48,6 +48,8 @@ li:hover{
     font-size: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 1.8rem;
+    font-weight: 900;
+    text-align: center;
 }
 
 .destacado__parrafo{
@@ -88,13 +90,6 @@ li:hover{
     margin: 0.62rem;
     padding: 0.62rem;
     border: 9rem;
-}
-
-.resultado__parrafo{
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    font-weight: 900;
 }
 
 .justify-content-stard{
@@ -139,9 +134,31 @@ li:hover{
         font-size: 2rem;
     } 
 
+    .destacado__titulo{
+        font-size: 6rem;
+    }
+
+    .destacado__parrafo{
+        font-size: 2rem;
+        width: 245vw;
+    }
+
     .footer__redes{
         width: 52rem
     }    
+
+    .carousel__celular{
+        width: 245vw;
+    }
+
+    .bg-p{
+        width: 255vw;
+    }
+
+    .imagen__producto1{
+        width: 50rem;
+        height: 50rem;
+    }
 }
 
 
@@ -156,6 +173,20 @@ li:hover{
     li a {
         font-size: 2rem;
     }
+
+    .bg-p{
+        width: 260vw;
+    }
+
+    .destacado__titulo{
+        font-size: 4rem;
+    }
+
+    .destacado__parrafo{
+        font-size: 10rem;
+        width: 245vw;
+    }
+
     .header__navegacion{
         flex-direction: column;
     }
@@ -164,11 +195,16 @@ li:hover{
         width: 52rem
     }
 
-    .destacado__subtitulo{
-        text-align: center;
-    }
-
     .destacado__parrafo{
         font-size: 1.5rem;
+    }
+
+    .carousel__celular{
+        width: 245vw;
+    }
+
+    .imagen__producto1{
+        width: 40rem;
+        height: 40rem;
     }
 }
