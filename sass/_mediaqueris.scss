@@ -1,0 +1,64 @@
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px){
+
+    .destacado{
+        &__titulo{
+        font-size: 6rem;
+        }
+        &__subtitulo{
+            font-size: 4rem;
+        }
+        &__parrafo{
+            font-size: 2rem;
+            width: 245vw;
+        }
+    }
+
+    .carousel__celular{
+        width: 245vw;
+    }
+
+    .bg-p{
+        width: 255vw;
+    }
+
+    .imagen__producto1{
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+
+/* CELULAR */
+@media (min-width:320px) and (max-width: 540px){
+
+    .bg-p{
+        width: 260vw;
+    }
+
+    .destacado{
+        &__titulo{
+            font-size: 4rem;
+        }
+        &__subtitulo{
+            font-size: 3rem;
+        }
+        &__parrafo{
+            font-size: 1.8rem;
+            width: 245vw;
+        }
+    }
+
+    .header__navegacion{
+        flex-direction: column;
+    }
+
+    .carousel__celular{
+        width: 245vw;
+    }
+
+    .imagen__producto1{
+        width: 40rem;
+        height: 40rem;
+    }
+}
