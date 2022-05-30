@@ -1,0 +1,19 @@
+*{margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: $color-fondo;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-p{
+    background: $fondo_footer_header;
+    background-blend-mode: multiply, overlay, normal;
+}
+
+li:hover{
+    transform: scale(1.5);
+    transition: all 3s;
+}

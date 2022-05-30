@@ -1,0 +1,9 @@
+$sizes: (h1: $tam-titulo, h2:$tam-subtitulo);
+
+@each $titulo, $size in $sizes {
+    #{$titulo}{
+        font-size: #{$size};
+        text-align: center;
+    }
+    
+}

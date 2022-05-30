@@ -1,0 +1,33 @@
+.destacado{
+    &__titulo{
+        color: $color_leta;
+        font-family: $letra-principal;
+        text-decoration: underline;
+        padding: 1.8rem;
+    }
+    &__subtiitulo{
+        @extend .destacado__titulo;
+        font-weight: 900;
+    }
+    &__parrafo{
+        color: $color_leta;
+        font-family: $letra-principal;
+        text-align: justify;
+        font-weight: 900;
+        }
+    &__boton{
+        color: $color_leta;
+        background-color: $color_boton;
+        font-size: large;
+        font-weight: 900;
+        padding: 1.25rem;
+        transition: border 300ms ease-out, border-radius 300ms ease-out;
+        }
+    &__boton:hover{
+        border: 5px solid rgba(100, 100, 100, 1);
+        border-radius: 60px;
+        background: $fondo_footer_header;
+        background-blend-mode: multiply, overlay, normal;
+        transition:all 2s;
+        }
+}

@@ -1,41 +1,13 @@
 .nav-link {
   color: black; }
 
-/* TABLET */
-@media (min-width: 541px) and (max-width: 720px) {
-  .destacado__titulo {
-    font-size: 6rem; }
-  .destacado__subtitulo {
-    font-size: 4rem; }
-  .destacado__parrafo {
-    font-size: 2rem;
-    width: 245vw; }
-  .carousel__celular {
-    width: 245vw; }
-  .bg-p {
-    width: 255vw; }
-  .imagen__producto1 {
-    width: 50rem;
-    height: 50rem; } }
+h1 {
+  font-size: 3rem;
+  text-align: center; }
 
-/* CELULAR */
-@media (min-width: 320px) and (max-width: 540px) {
-  .bg-p {
-    width: 260vw; }
-  .destacado__titulo {
-    font-size: 4rem; }
-  .destacado__subtitulo {
-    font-size: 3rem; }
-  .destacado__parrafo {
-    font-size: 1.8rem;
-    width: 245vw; }
-  .header__navegacion {
-    flex-direction: column; }
-  .carousel__celular {
-    width: 245vw; }
-  .imagen__producto1 {
-    width: 40rem;
-    height: 40rem; } }
+h2 {
+  font-size: 2.5rem;
+  text-align: center; }
 
 * {
   margin: 0px;
@@ -54,19 +26,25 @@ li:hover {
   transform: scale(1.5);
   transition: all 3s; }
 
-.destacado__titulo {
-  font-size: 6.25rem;
-  text-align: center;
-  text-decoration: underline;
+.imagen__producto {
+  width: 20rem;
+  height: 20rem; }
+
+.imagen__producto1 {
+  width: 18rem;
+  height: 18rem; }
+  .imagen__producto1:hover {
+    transform: scale(1.2);
+    transition: all 1.5s; }
+
+.destacado__titulo, .destacado__subtiitulo {
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
   padding: 1.8rem; }
 
 .destacado__subtiitulo {
-  font-size: 2.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 1.8rem;
-  font-weight: 900;
-  text-align: center; }
+  font-weight: 900; }
 
 .destacado__parrafo {
   color: black;
@@ -89,13 +67,38 @@ li:hover {
   background-blend-mode: multiply, overlay, normal;
   transition: all 2s; }
 
-.imagen__producto {
-  width: 25rem;
-  height: 25rem; }
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px) {
+  .destacado__titulo, .destacado__subtiitulo {
+    font-size: 6rem; }
+  .destacado__subtitulo {
+    font-size: 3.75rem; }
+  .destacado__parrafo {
+    font-size: 2rem;
+    width: 245vw; }
+  .carousel__lumos {
+    width: 245vw; }
+  .bg-p {
+    width: 255vw; }
+  .imagen__producto1 {
+    width: 50rem;
+    height: 50rem; } }
 
-.imagen__producto1 {
-  width: 18rem;
-  height: 18rem; }
-  .imagen__producto1:hover {
-    transform: scale(1.2);
-    transition: all 1.5s; }
+/* CELULAR */
+@media (min-width: 320px) and (max-width: 540px) {
+  .bg-p {
+    width: 260vw; }
+  .destacado__titulo, .destacado__subtiitulo {
+    font-size: 3rem; }
+  .destacado__subtitulo {
+    font-size: 2.5rem; }
+  .destacado__parrafo {
+    font-size: 1.8rem;
+    width: 245vw; }
+  .header__navegacion {
+    flex-direction: column; }
+  .carousel__lumos {
+    width: 245vw; }
+  .imagen__producto1 {
+    width: 40rem;
+    height: 40rem; } }

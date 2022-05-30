@@ -1,0 +1,15 @@
+.imagen{
+    &__producto{
+        width: 20rem;
+        height: 20rem;
+        }
+    &__producto1{
+        width: 18rem;
+        height: 18rem;
+            &:hover{
+                transform: scale(1.2);
+                transition: all 1.5s;
+            }
+        }
+    
+}
