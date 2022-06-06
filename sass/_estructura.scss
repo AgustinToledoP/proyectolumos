@@ -3,7 +3,8 @@
 }
 
 body{
-    background-image: $color-fondo;
+    background-color: $color-fondo;
+    background-image: $color-imagenfondo;
     background-attachment: fixed;
     background-size: cover;
 }
