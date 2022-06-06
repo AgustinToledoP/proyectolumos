@@ -7,19 +7,19 @@
     }
     &__subtiitulo{
         @extend .destacado__titulo;
-        font-weight: 900;
+        font-weight: $letra-weight;
     }
     &__parrafo{
         color: $color_leta;
         font-family: $letra-principal;
         text-align: justify;
-        font-weight: 900;
+        font-weight: $letra-weight;
         }
     &__boton{
         color: $color_leta;
         background-color: $color_boton;
         font-size: large;
-        font-weight: 900;
+        font-weight: $letra-weight;
         padding: 1.25rem;
         transition: border 300ms ease-out, border-radius 300ms ease-out;
         }
