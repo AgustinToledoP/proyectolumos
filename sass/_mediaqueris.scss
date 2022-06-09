@@ -9,17 +9,8 @@
             font-size: $tam-subtitulo*1.5;
         }
         &__parrafo{
-            font-size: 2rem;
-            width: 245vw;
+            font-size: 1rem;
         }
-    }
-
-    .carousel__lumos{
-        width: 245vw;
-    }
-
-    .bg-p{
-        width: 255vw;
     }
 
     .imagen__producto1{
@@ -32,20 +23,15 @@
 /* CELULAR */
 @media (min-width:320px) and (max-width: 540px){
 
-    .bg-p{
-        width: 260vw;
-    }
-
     .destacado{
         &__titulo{
-            font-size: $tam-titulo;
+            font-size: $tam-titulocel;
         }
         &__subtitulo{
-            font-size: $tam-subtitulo;
+            font-size: $tam-subtitulocel;
         }
         &__parrafo{
-            font-size: 1.8rem;
-            width: 245vw;
+            font-size: 1rem;
         }
     }
 
@@ -53,12 +39,18 @@
         flex-direction: column;
     }
 
-    .carousel__lumos{
-        width: 245vw;
+    .imagen__producto1{
+        width: 90vw;
+        height: 45vh;
     }
 
-    .imagen__producto1{
-        width: 40rem;
-        height: 40rem;
+    .imagen__logo{
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .video{
+        width: 95vw;
+        height: 30vh;
     }
 }

@@ -14,7 +14,29 @@ body{
     background-blend-mode: multiply, overlay, normal;
 }
 
+li{
+    margin-right: 1rem;
+}
+
 li:hover{
-    transform: scale(1.5);
-    transition: all 3s;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    @extend .col;
+    margin-top: 2rem;
+}
+
+.qs{
+    margin-top: 2rem;
+}
+
+form{
+    @extend .col;
 }
